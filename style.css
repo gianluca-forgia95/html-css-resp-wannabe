@@ -72,7 +72,89 @@ img {
   clear: both;
 }
 
-/* Responsive */
+/* Responsive max width 1020px */
+@media screen and (max-width:1020px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+  .row h1 {
+    text-align: center;
+    color: #ff3333;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 150px;
+    vertical-align: middle;
+  }
+
+  body {
+    background-color: #ffb380;
+  }
+  .container.grey {
+   background-color: #ffb380;
+  }
+  /* stile sezione id lezioni */
+  .left , .central , .right  {
+   width: 20%;
+   border-radius: 8px;
+   box-shadow: 5px 5px 10px 2px #333333;
+   background-color: #ff3333;
+   border: 2px solid black;
+  }
+  .left>img , .central>img , .right>img {
+    width: 200px;
+    height: 180px;
+    margin-bottom: 40px;
+  }
+  #lezioni .row>.right {
+    margin-left: 50%;
+    margin-top: 20px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+  }
+  /* stile sezione id lezioni */
+  /* stile sezione id steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+   /* /stile sezione id steps */
+  /* stile sezione finale */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third
+   {
+    width: 30%;
+    float: left;
+    background-color: #ff3333;
+    box-shadow: 5px 5px 10px 2px #333333;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid black;
+  }
+  #why .row img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+    /* /stile sezione finale */
+}
+/* /Responsive max width 1020px */
+
+/* Responsive max width 420px */
 @media screen and (max-width:420px) {
   * {
     margin: 0;
@@ -80,9 +162,7 @@ img {
     box-sizing: border-box;
   }
   body {
-
     background-color: #ff3333;
-
   }
 
  .row {
@@ -92,7 +172,6 @@ img {
  }
  .row > h1 {
    text-align: center;
-   margin: auto;
    font-size: 20px;
    line-height: 50px;
    text-transform: uppercase;
@@ -197,3 +276,4 @@ img {
 
     }
 }
+/* /Responsive max width 420px */
