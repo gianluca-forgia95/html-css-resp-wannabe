@@ -73,7 +73,7 @@ img {
 }
 
 /* Responsive */
-@media screen and (max-width:480px) {
+@media screen and (max-width:420px) {
   * {
     margin: 0;
     padding: 0;
@@ -82,6 +82,7 @@ img {
   body {
 
     background-color: #ff3333;
+
   }
 
  .row {
@@ -95,7 +96,7 @@ img {
    font-size: 20px;
    line-height: 50px;
    text-transform: uppercase;
-   padding: 0 40px;
+   padding: 0 50px;
    color: black;
    margin: 40px 0;
    border: 1px solid black;
@@ -104,6 +105,7 @@ img {
 
  }
 
+/* stile id lezioni */
  .left > img {
    width: 50px;
    height: 50px;
@@ -113,19 +115,26 @@ img {
    line-height: 30px;
    vertical-align: top;
  }
- .left {
+ .left , .central , .right  {
   width: 30%;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: 5px 5px 10px 2px #333333;
   background-color: #ffb380;
-
+  border: 2px solid #bfbfbf;
  }
+ #lezioni .row>.right {
+   margin-left: 50%;
+   margin-top: 20px;
+ }
+ #lezioni .row>.left,
+ #lezioni .row>.right {
+
+   float: none;
+ }
+ /* /stile id lezioni */
+ /* stile sezione centrale */
  .central {
-   background-color: #ffb380;
-   width: 30%;
-   border-radius: 2px;
-   box-shadow: 5px 5px 10px 2px #333333;
-   margin-left: 190px;
+   margin-left: 50%;
  }
  .central > img {
    width: 50px;
@@ -135,12 +144,8 @@ img {
    vertical-align: top;
    line-height: 30px;
  }
- .right {
+ #steps .row>.right {
   width: 70%;
-  border-radius: 2px;
-  box-shadow: 5px 5px 10px 2px #333333;
-  background-color: #ffb380;
-  margin-left: 20%;
   margin-top: 20px;
 
    }
@@ -152,12 +157,9 @@ img {
    line-height: 30px;
    vertical-align: top;
  }
- #lezioni .row>.left,
- #lezioni .row>.right {
-
-   float: none;
+ #steps .row>.central {
+   margin-left: 50%;
  }
-
   .container.grey {
    background-color: #ff3333;
   }
@@ -165,5 +167,33 @@ img {
   #steps .row>.central,
   #steps .row>.right {
     float: none;
+    width: 50%;
+    margin-top: 20px;
   }
+   /* /stile sezione centrale */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third
+   {
+    width: 50%;
+    display: block;
+    background-color: #ffb380;
+    box-shadow: 5px 5px 10px 2px #333333;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 2px solid #bfbfbf;
+  }
+ #why .row>.second {
+   margin-left: 50%;
+ }
+  #why .row img {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+  }
+    #why .row h3 {
+      font-size: 18px;
+
+    }
 }
